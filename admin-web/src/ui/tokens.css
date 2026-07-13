@@ -1,0 +1,21 @@
+:root {
+  --bg: #0C1020; --surface: #131826; --surface-hi: #1C2235; --border: #1E2840;
+  --accent: #F5A624; --green: #2BC49A; --red: #E84040; --blue: #4A9EF5; --amber: #D9A62E;
+  --text: #F0EDE8; --text-sec: #6B7E9E;
+  --radius-card: 14px; --radius-ctl: 10px; --radius-pill: 999px;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font-family: 'Inter', system-ui, sans-serif; font-size: 14px; }
+.mono { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-card); padding: 20px; }
+input, textarea, select {
+  width: 100%; padding: 10px 12px; border-radius: var(--radius-ctl);
+  border: 1px solid var(--border); background: var(--surface-hi); color: var(--text); font: inherit;
+}
+input:focus, textarea:focus, select:focus { outline: 2px solid var(--accent); outline-offset: 0; }
+button { font: inherit; cursor: pointer; }
+table { width: 100%; border-collapse: collapse; }
+th { text-align: left; color: var(--text-sec); font-weight: 600; padding: 8px 10px; }
+td { padding: 10px; border-top: 1px solid var(--border); }
+a { color: var(--accent); text-decoration: none; }

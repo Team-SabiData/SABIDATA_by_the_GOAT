@@ -1,0 +1,9 @@
+# Monorepo — ignores globaux (chaque sous-projet a aussi le sien)
+**/node_modules/
+**/dist/
+**/build/
+**/.dart_tool/
+*.log
+.env
+.DS_Store
+.claude/settings.local.json
