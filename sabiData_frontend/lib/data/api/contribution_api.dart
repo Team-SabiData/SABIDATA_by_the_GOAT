@@ -22,10 +22,10 @@ class ContributionApi {
       'durationS': durationS.toString(),
       'commercialUse': commercialUse.toString(),
       'consentVersion': consentVersion,
-      'promptId': ?promptId,
-      'language': ?language,
-      'dialect': ?dialect,
-      'region': ?region,
+      if (promptId != null) 'promptId': promptId,
+      if (language != null) 'language': language,
+      if (dialect != null) 'dialect': dialect,
+      if (region != null) 'region': region,
     };
     final data = await _client.postMultipart('/api/clips', fields, filePath: audioPath);
     return Map<String, dynamic>.from(data as Map);
